@@ -19,7 +19,7 @@ The project requires only `gcc` (or `clang`) and `make`.
 ### Build
 Clone the repository and run make:
 ```
-git clone https:/gripols/Brainfork.git
+git clone https://gripols/Brainfork.git
 cd brainfork
 make
 ```
