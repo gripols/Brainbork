@@ -1,4 +1,4 @@
-# Brainfork: A High-Performance, Cross-Platform Brainf*ck Derivative
+# Brainbork: A High-Performance, Cross-Platform Brainf*ck Derivative
 
 Brainbork is a high-performance interpreter and Just-In-Time (JIT) 
 compiler for a Brainf*ck-compatible derivative. Written in C, it features a clean, 
