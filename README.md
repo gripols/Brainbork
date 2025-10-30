@@ -18,19 +18,19 @@ The project requires only `gcc` (or `clang`) and `make`.
 ### Build
 Clone the repository and run make:
 ```
-git clone https://gripols/Brainfork.git
-cd brainfork
+git clone https://gripols/Brainbork.git
+cd brainbork
 make
 ```
 This detects your host architecture (x86_64 or aarch64), builds the appropriate JIT backend, 
 and creates the brainfork executable.
 
 ### Run
-Execute any Brainf*ck or Brainfork file.
+Execute any Brainf*ck or Brainbork file.
 
 Usage:
 ```
-./brainfork [options] <filename.bf>
+./brainbork [options] <filename.bf>
 Options:
 -i: Interpreter Mode.
 -j: JIT Mode (compiles to native assembly).
@@ -48,7 +48,7 @@ Example (examples/mandelbrot.bf):
 ```
 
 ### Extended Syntax: 
-Brainfork adds three operators for stack-based functions:
+Brainbork adds three operators for stack-based functions:
 - `(`: Define Lambda. Begins a function definition, capturing the current data pointer (p) as a closure.
 - `)`: End Lambda. Marks the end of the function body.
 - `!`: Call Lambda. Calls the most recently defined lambda. This peeks at the lambda stack (allowing multiple calls), 
