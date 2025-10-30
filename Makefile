@@ -36,7 +36,7 @@ SRCS := $(BASE_SRCS) $(ARCH_SRCS)
 
 BUILD_DIR := build
 OBJS := $(SRCS:src/%.c=$(BUILD_DIR)/%.o)
-TARGET := brainfork
+TARGET := brainbork
 
 all: $(TARGET)
 
@@ -50,7 +50,7 @@ $(BUILD_DIR)/%.o: src/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 run: $(TARGET)
-	@echo "Running Brainfork example: examples/mandelbrot.bf"
+	@echo "Running Brainbork example: examples/mandelbrot.bf"
 	./$(TARGET) examples/mandelbrot.bf
 
 clean:

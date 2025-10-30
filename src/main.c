@@ -6,10 +6,10 @@
 static void usage()
 {
 	printf("usage:\n"
-	       "  ./brainfork [options] <filename.bf>\n\n"
+	       "  ./brainbork [options] <filename.bf>\n\n"
 	       "options:\n"
 	       "  -i | interpreter mode\n"
-	       "  -j | JIT compiler mode\n");
+	       "  -j | JIT mode\n");
 }
 
 static char *read_file_to_string(const char *filename)

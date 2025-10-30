@@ -1,17 +1,16 @@
 # Brainfork: A High-Performance, Cross-Platform Brainf*ck Derivative
 
-Brainfork is a high-performance interpreter and Just-In-Time (JIT) 
+Brainbork is a high-performance interpreter and Just-In-Time (JIT) 
 compiler for a Brainf*ck-compatible derivative. Written in C, it features a clean, 
 modular architecture that generates machine code on-the-fly for x86-64 and aarch64 
 (ARM64) systems. The entire VM state is encapsulated in a BfVm struct, eliminating 
 global state and ensuring testability.
 
 ## Key Features
-- Dual Execution Modes: Run code via a fast, portable interpreter (-i) or the high-performance JIT compiler (-j).
+- Dual Execution Modes: Run code via a fast, portable interpreter `(-i)` or the high-performance JIT compiler `(-j)`.
 - Cross-Platform JIT: Automatically detects x86-64 or aarch64 (ARM64) hosts and generates optimized native code.
-- Peephole Optimization: A pre-compilation pass collapses common patterns like [-] and [+] into a single, efficient op_clear.
-- Extended Syntax: Lambda Closures: Implements first-class, nestable functions (()) with true closure support (capturing the data 
-pointer p).
+- Peephole Optimization: A pre-compilation pass collapses common patterns like `[-]`and `[+]` into a single, efficient op_clear.
+- Extended Syntax: Lambda Closures: Implements first-class, nestable functions (()) with true closure support (capturing the data pointers).
 
 ## Getting Started
 The project requires only `gcc` (or `clang`) and `make`.
@@ -38,12 +37,12 @@ Options:
 ```
 Example (examples/mandelbrot.bf):
 
-# Run with the JIT (Fastest)
+#### Run with the JIT (Fastest)
 ```
 ./brainfork -j examples/mandelbrot.bf
 ```
 
-# Run with the Interpreter
+#### Run with the Interpreter
 ```
 ./brainfork -i examples/mandelbrot.bf
 ```
