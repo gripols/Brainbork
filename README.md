@@ -18,7 +18,7 @@ The project requires only `gcc` (or `clang`) and `make`.
 ### Build
 Clone the repository and run make:
 ```
-git clone https://gripols/Brainbork.git
+git clone https://github.com/gripols/Brainbork.git
 cd brainbork
 make
 ```
